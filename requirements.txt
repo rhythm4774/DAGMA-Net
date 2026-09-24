@@ -1,0 +1,7 @@
+# DAGMA-Net dependencies
+# CPU is fine for tests and small runs; a CUDA build of torch is used automatically if present.
+torch>=2.0
+numpy>=1.24
+matplotlib>=3.6
+networkx>=3.0        # optional (acyclicity test falls back to a pure-python Kahn's algo if missing)
+pytest>=7.0          # for test_dagma_net.py
